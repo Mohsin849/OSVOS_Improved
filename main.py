@@ -72,7 +72,6 @@ def main(seq):
         print("mean IOU with contour snapping for ", seq, "is: ", mean_iou_score(annotation_imgs,boundary_snapping_result_path,show_per_frame_iou))
 
 if __name__ == '__main__':
-    sequences = ['car-shadow', 'parkour', 'horsejump-high']#, 'flamingo', 'tennis', 'paragliding-launch', 'goat', 'bear', 'drift-chicane', 'bus', 'surf', 'swing', 'breakdance', 'car-roundabout', 'dance-twirl', 'drift-straight', 'breakdance-flare', 'lucia', 'hike', 'hockey', 'bmx-bumps', 'mallard-water', 'car-turn', 'libby', 'elephant', 'dance-jump', 'dog-agility', 'camel', 'horsejump-low', 'rollerblade', 'blackswan', 'motocross-jump', 'motocross-bumps', 'soapbox', 'drift-turn', 'scooter-black', 'bmx-trees', 'rhino', 'mallard-fly', 'kite-walk', 'paragliding', 'scooter-gray', 'soccerball', 'stroller', 'kite-surf']
-    youtube_seqs = ['boat', 'cows', 'dog', 'motorbike', 'train']
+    sequences = sequences = ['car-shadow', 'parkour', 'tennis', 'paragliding-launch', 'drift-chicane', 'bus', 'surf', 'swing', 'breakdance', 'car-roundabout', 'dance-twirl', 'drift-straight', 'breakdance-flare', 'lucia', 'hike', 'hockey', 'bmx-bumps', 'mallard-water', 'car-turn', 'libby', 'dance-jump', 'rollerblade', 'motocross-jump', 'motocross-bumps', 'soapbox', 'drift-turn', 'scooter-black', 'bmx-trees', 'mallard-fly', 'kite-walk', 'paragliding', 'scooter-gray', 'soccerball', 'stroller', 'kite-surf']
     for seq in sequences:
         main(seq)
