@@ -39,7 +39,7 @@ def main(seq):
     result_filenames = glob.glob(os.path.join(boundary_snapping_result_path, '*.png'))  #where result will save
    
     # Train and test or just test, depending on the value of "train_model"
-    if len(result_filenames)==0 and train_model:
+    if train_model:
         train_and_test_osvos(seq_name, gpu_id, boundary_snapping_result_path, train_model, max_training_iters, train_img_name, annot_img_name)
         result_filenames = glob.glob(os.path.join(boundary_snapping_result_path, '*.png'))
         result_filenames.sort()
