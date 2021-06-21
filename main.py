@@ -20,7 +20,7 @@ def main(seq):
     seq_name = seq         # Change to train and test other data sets. Should be the name of the folder containing the images.
     gpu_id = 0                      # Change according to your GPU id.
     train_model = True             # Change to train/not train the model. If set to False, you need pre-trained model.
-    max_training_iters = 500       # Change this according to the model name if using the pretrained models
+    max_training_iters = 5000       # Change this according to the model name if using the pretrained models
     train_img_name = '00000.jpg'    # Change to train with a different frame
     annot_img_name = '00000.png'    # This should be the same as the 'train_img_name'. Extensions of file should used accordingly.
     show_per_frame_iou = False       # Set this to True to show IoU score of every frame, False to show just mean IoU score.
